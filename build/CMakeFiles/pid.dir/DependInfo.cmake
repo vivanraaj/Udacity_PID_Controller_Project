@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/CarND-PID-Control-Project/src/PID.cpp" "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/CarND-PID-Control-Project/build/CMakeFiles/pid.dir/src/PID.cpp.o"
-  "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/CarND-PID-Control-Project/src/main.cpp" "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/CarND-PID-Control-Project/build/CMakeFiles/pid.dir/src/main.cpp.o"
+  "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/Udacity_PID_Controller_Project/src/PID.cpp" "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/Udacity_PID_Controller_Project/build/CMakeFiles/pid.dir/src/PID.cpp.o"
+  "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/Udacity_PID_Controller_Project/src/main.cpp" "/home/mrmad/Documents/Self_Driving/Term2/PID Controller Project/Udacity_PID_Controller_Project/build/CMakeFiles/pid.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

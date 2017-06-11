@@ -5,9 +5,16 @@
 #include <math.h>
 
 // for convenience
+// below like using namespace std:
 using json = nlohmann::json;
 
 // For converting back and forth between radians and degrees.
+
+// const applies for variables, and prevents them from being modified in your code.
+// constexpr tells the compiler that this expression results in a compile time constant value, 
+// so it can be used in places like array lengths, assigning to const variables, etc
+
+
 constexpr double pi() { return M_PI; }
 double deg2rad(double x) { return x * pi() / 180; }
 double rad2deg(double x) { return x * 180 / pi(); }
@@ -28,16 +35,16 @@ std::string hasData(std::string s) {
   return "";
 }
 
-int main(int argc, char *argv[])
+int main()
 {
   uWS::Hub h;
 
   PID pid;
   // TODO: Initialize the pid variable. 
   // start with negative value
-  double init_Kp = atof(argv[1]);
-  double init_Ki = atof(argv[2]);
-  double init_Kd = atof(argv[3]);
+  double init_Kp = -0.25;
+  double init_Ki = 0;
+  double init_Kd = -0.75;
 
   pid.Init(init_Kp, init_Ki, init_Kd);
 
@@ -66,6 +73,7 @@ int main(int argc, char *argv[])
           */
           pid.UpdateError(cte);
           steer_value = pid.TotalError();
+
 
 
           // DEBUG

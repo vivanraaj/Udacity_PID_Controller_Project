@@ -11,6 +11,7 @@ PID::PID() {}
 PID::~PID() {}
 
 void PID::Init(double Kp, double Ki, double Kd) {
+    // below this is used instead of _ which is more convenient
     this ->Kp = Kp;
     this ->Ki = Ki;
     this ->Kd = Kd;
